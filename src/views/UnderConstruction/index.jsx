@@ -18,7 +18,7 @@ const UnderConstruction = () => {
   return (
     <Fragment>
       <Helmet>
-        <title>AFT Studio</title>
+        <title>Almer Tampus</title>
       </Helmet>
       {isLoading && <LoadingScreen />}
       {!isLoading && (
@@ -30,7 +30,7 @@ const UnderConstruction = () => {
             <section className='under-construction__body'>
               <p className='mt-4'>
                 I&#39;m still in the process of rebuilding my personal website 🚧. I will be
-                updating it soon. Thanks for checking!
+                deploying it soon. Thanks for checking up!
               </p>
             </section>
             <footer className='under-construction__footer'>
