@@ -1,0 +1,77 @@
+.under-construction {
+  display       : flex;
+  flex-direction: column;
+  align-items   : center;
+  width         : 100%;
+  height        : 100%;
+  min-height    : 100vh;
+  background    : #EEEEEE;
+
+  .under-construction__content {
+    margin-top: 8em;
+    padding   : 1em;
+  }
+
+  .under-construction__body,
+  .under-construction__footer {
+    margin-top: 2em;
+
+    p {
+      max-width: 420px;
+      color    : #585D5F;
+      font-size: 20px;
+    }
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .under-construction {
+
+    .under-construction__body,
+    .under-construction__footer {
+      p {
+        max-width: 580px;
+        color    : #585D5F;
+        font-size: 24px;
+      }
+    }
+  }
+}
+
+@keyframes fade {
+  to {
+    opacity: 1;
+  }
+}
+
+.under-construction {
+  .under-construction__header {
+    animation                : fade;
+    animation-delay          : 0.1s;
+    animation-duration       : 1s;
+    animation-timing-function: ease-out;
+    animation-direction      : normal;
+    animation-fill-mode      : forwards;
+    opacity                  : 0;
+  }
+
+  .under-construction__body {
+    animation                : fade;
+    animation-delay          : 0.4s;
+    animation-duration       : 1s;
+    animation-timing-function: ease-out;
+    animation-direction      : normal;
+    animation-fill-mode      : forwards;
+    opacity                  : 0;
+  }
+
+  .under-construction__footer {
+    animation                : fade;
+    animation-delay          : 0.8s;
+    animation-duration       : 1s;
+    animation-timing-function: ease-out;
+    animation-direction      : normal;
+    animation-fill-mode      : forwards;
+    opacity                  : 0;
+  }
+}
